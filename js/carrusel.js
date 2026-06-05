@@ -1,16 +1,16 @@
 let indice = 0;
-let imagenes = ["img/1.jpg", "img/2.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg"];
+let imagenes = ["img/img1.jpg", "img/img2.jpg", "img/img3.jpg", "img/img4.jpg", "img/img5.jpg"];
 
 document.getElementById("siguiente").addEventListener("click", () =>{
-    if (indice > 5){
+    if (indice < 4){
         indice ++;
     }
     document.getElementById("img").setAttribute("src",imagenes[indice]);
 });
 
 document.getElementById("anterior").addEventListener("click", () =>{
-    if (indice <1){
-        indice ++;
+    if (indice >0){
+        indice --;
     }
     document.getElementById("img").setAttribute("src",imagenes[indice]);
 });
